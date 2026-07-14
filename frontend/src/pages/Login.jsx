@@ -28,7 +28,7 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-navy to-royal p-5">
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-sm px-9 py-11">
         <div className="flex justify-center mb-8">
-          <Logo size={48} textClass="text-2xl" />
+          <Logo size={80} />
         </div>
 
         <p className="text-center text-sm font-semibold text-slate-500 mb-6 tracking-wide">

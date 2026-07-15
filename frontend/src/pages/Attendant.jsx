@@ -68,7 +68,7 @@ export default function Attendant() {
     <div className="min-h-screen flex flex-col bg-[#F4F7FC]">
       {/* Header */}
       <header className="bg-navy px-4 py-3 flex items-center justify-between gap-3">
-        <Logo size={36} />
+        <Logo size={36} white />
         <div className="flex items-center gap-3">
           <div className="text-right leading-tight">
             <strong className="block text-white text-sm font-bold">{user?.name}</strong>

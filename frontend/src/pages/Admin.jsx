@@ -95,7 +95,7 @@ export default function Admin() {
       {/* Topbar */}
       <header className="bg-navy px-5 h-14 flex items-center justify-between gap-4 sticky top-0 z-40">
         <div className="flex items-center gap-3">
-          <Logo size={36} />
+          <Logo size={36} white />
           <span className="bg-white/15 text-white/70 text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full">
             Admin
           </span>

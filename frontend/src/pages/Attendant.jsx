@@ -67,16 +67,16 @@ export default function Attendant() {
   return (
     <div className="min-h-screen flex flex-col bg-[#F4F7FC]">
       {/* Header */}
-      <header className="bg-navy px-4 py-3 flex items-center justify-between gap-3">
-        <Logo size={36} white />
+      <header className="bg-white border-b border-slate-200 shadow-sm px-4 py-3 flex items-center justify-between gap-3">
+        <Logo size={36} />
         <div className="flex items-center gap-3">
           <div className="text-right leading-tight">
-            <strong className="block text-white text-sm font-bold">{user?.name}</strong>
-            <span className="text-white/50 text-xs">{user?.unit}</span>
+            <strong className="block text-navy text-sm font-bold">{user?.name}</strong>
+            <span className="text-slate-400 text-xs">{user?.unit}</span>
           </div>
           <button
             onClick={handleLogout}
-            className="bg-white/10 hover:bg-white/20 text-white/80 text-xs font-semibold px-3 py-1.5 rounded-lg transition"
+            className="bg-slate-100 hover:bg-slate-200 text-slate-600 text-xs font-semibold px-3 py-1.5 rounded-lg transition"
           >
             Sair
           </button>

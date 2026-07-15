@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import api from '../api/client';
 import Logo from '../components/Logo';
 
@@ -162,6 +162,15 @@ export default function Admin() {
             Painel Admin
           </span>
         </div>
+        <div className="flex items-center gap-2">
+          <Link to="/usuarios"
+            className="flex items-center gap-2 text-slate-400 hover:text-[#0F3460] text-xs font-semibold px-3 py-2 rounded-xl hover:bg-[#EBF4FF] transition">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            Usuários
+          </Link>
         <button onClick={handleLogout}
           className="flex items-center gap-2 text-slate-400 hover:text-[#0F3460] text-xs font-semibold px-3 py-2 rounded-xl hover:bg-[#EBF4FF] transition">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
@@ -169,6 +178,7 @@ export default function Admin() {
           </svg>
           Sair
         </button>
+        </div>
       </header>
 
       {/* Faixa decorativa */}

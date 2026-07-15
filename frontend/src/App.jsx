@@ -3,6 +3,7 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import Login from './pages/Login';
 import Attendant from './pages/Attendant';
 import Admin from './pages/Admin';
+import Users from './pages/Users';
 
 function Guard({ role, children }) {
   const { user } = useAuth();
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/" element={<Login />} />
           <Route path="/registrar" element={<Guard role="attendant"><Attendant /></Guard>} />
           <Route path="/admin"     element={<Guard role="admin"><Admin /></Guard>} />
+          <Route path="/usuarios"  element={<Guard role="admin"><Users /></Guard>} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>

@@ -13,6 +13,7 @@ app.get('/health', (req, res) => res.json({ status: 'ok', ts: new Date().toISOSt
 
 app.use('/api/auth',    require('./routes/auth'));
 app.use('/api/records', require('./routes/records'));
+app.use('/api/users',   require('./routes/users'));
 
 app.use(errorHandler);
 

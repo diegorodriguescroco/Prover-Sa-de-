@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import api from '../api/client';
 import Logo from '../components/Logo';
 
-const UNITS = ['Unidade Centro', 'Unidade Norte', 'Unidade Sul'];
+const UNITS = ['Vinhema', 'Nova Andradina', 'Dourados', 'Bonito'];
 
 function Modal({ title, onClose, children }) {
   return (

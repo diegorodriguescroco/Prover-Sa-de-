@@ -4,7 +4,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import api from '../api/client';
 import Logo from '../components/Logo';
 
-const UNITS      = ['Unidade Centro', 'Unidade Norte', 'Unidade Sul'];
+const UNITS      = ['Vinhema', 'Nova Andradina', 'Dourados', 'Bonito'];
 const ATTENDANTS = ['Maria Silva', 'Joana Pereira', 'Carla Mendes'];
 
 function fDateBR(iso) {

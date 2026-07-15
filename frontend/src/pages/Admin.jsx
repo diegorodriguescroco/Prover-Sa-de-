@@ -41,7 +41,7 @@ const CARD_ICONS = {
 
 function SummaryCard({ label, value, sub, accent, icon }) {
   return (
-    <div className={`rounded-2xl p-5 relative overflow-hidden transition-transform hover:-translate-y-0.5 ${
+    <div className={`rounded-2xl p-5 transition-transform hover:-translate-y-0.5 ${
       accent
         ? 'text-white'
         : 'bg-white border border-slate-100'
@@ -50,22 +50,16 @@ function SummaryCard({ label, value, sub, accent, icon }) {
         ? { background: 'linear-gradient(135deg,#0A2647 0%,#1B6AB1 100%)', boxShadow: '0 8px 32px rgba(15,52,96,.28)' }
         : { boxShadow: '0 2px 12px rgba(15,52,96,.07)' }
       }>
-      {/* Círculo decorativo de fundo */}
-      <div className="absolute -right-4 -top-4 w-20 h-20 rounded-full opacity-10"
-        style={{ background: accent ? '#fff' : '#1B6AB1' }} />
-      <div className="absolute -right-1 -bottom-6 w-14 h-14 rounded-full opacity-5"
-        style={{ background: accent ? '#fff' : '#0F3460' }} />
-
-      <div className="flex items-start justify-between mb-3 relative">
+      <div className="flex items-start justify-between mb-3">
         <p className={`text-[10px] font-bold uppercase tracking-widest ${accent ? 'text-white/60' : 'text-slate-400'}`}>{label}</p>
         <span className={`p-1.5 rounded-xl ${accent ? 'bg-white/15 text-white' : 'bg-[#EBF4FF] text-[#1B6AB1]'}`}>
           {icon}
         </span>
       </div>
-      <p className={`text-[42px] font-extrabold font-tabular leading-none relative ${accent ? 'text-white' : 'text-[#0F3460]'}`}>
+      <p className={`text-[42px] font-extrabold font-tabular leading-none ${accent ? 'text-white' : 'text-[#0F3460]'}`}>
         {value}
       </p>
-      {sub && <p className={`text-xs mt-2 relative ${accent ? 'text-white/45' : 'text-slate-400'}`}>{sub}</p>}
+      {sub && <p className={`text-xs mt-2 ${accent ? 'text-white/45' : 'text-slate-400'}`}>{sub}</p>}
     </div>
   );
 }
